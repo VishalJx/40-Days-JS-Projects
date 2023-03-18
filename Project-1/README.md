@@ -19,3 +19,13 @@
 
 > ### Sample Preview :  
 ![Screenshot](rccg.png)
+
+<br>
+
+> ### Github Learning  
+     How to revert back to previous commit:
+     1. git log  : shows commit ids of all commits
+     2. git reset {commit id which you want back} --hard : return back to code of previous commit and displays changes in local machine too.
+     3. git add
+     4. git commit
+     5. git push -f origin {branch} : -f is fast-forward
