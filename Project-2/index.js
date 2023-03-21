@@ -31,10 +31,10 @@ function showTodo(filter){
                 <div class="setting">
                     <img src="./svg/dot.svg" class="task-img" alt="">
                     <div class="task-icons">
-                        <span id="edit-span" onclick="editTask(${id}, '${todo.name}')"><img src="./svg/edit.svg" id="edit" alt="">
+                        <span id="Btn" onclick="editTask(${id}, '${todo.name}')"><img src="./svg/edit.svg" id="edit" alt="">
                             <p>Edit</p>
                         </span>
-                        <span id="delete-span" onclick="deleteTask(${id})"><img src="./svg/delete.svg" id="delete" alt="">
+                        <span id="Btn" onclick="deleteTask(${id})"><img src="./svg/delete.svg" id="delete" alt="">
                             <p>Delete</p>
                         </span>
                     </div>
