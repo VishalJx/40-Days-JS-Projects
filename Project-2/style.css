@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+body{
+    background-color: rgb(27, 116, 250);
+}
+.wrapper{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:25rem;
+    margin: 15rem auto;
+    padding: 1.5rem 1rem 2.5rem 1rem;
+    border-radius:0.5rem;
+
+}
+.input{
+    position:relative;
+}
+#img{
+    position: absolute;
+    width:3rem;
+    left:0.2rem;
+    color:rgb(219, 17, 17);
+}
+#input{
+    width:20rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    padding:0rem 1rem 0rem 3.2rem;
+    outline: none;
+    border: 2px solid rgb(84, 124, 255);
+    color:rgb(71, 71, 71);
+    border-radius:0.5rem ;
+}
+.options{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1.2rem 1.2rem 1.2rem 1.8rem;
+    border-bottom: 2px solid rgb(228, 228, 228);
+    padding-bottom: 0.8rem;
+}
+.filters{
+    display: flex;
+    justify-content: space-evenly;
+    width:15rem;
+    margin-right: 1.5rem;
+}
+button{
+    background-color: rgba(27, 116, 250, 0.849);
+    color: white;
+    border: none;
+    width:5rem;
+    height:1.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+}
+.tasks{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+ul{
+    list-style: none;
+}
+label{
+    position: relative;
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    padding:0.8rem 0.5rem 0.8rem 0.5rem;
+    border-bottom:2px solid rgb(224, 224, 224) ;
+    margin-left: 1rem;
+    text-transform: capitalize;
+}
+label > input{
+    margin-right: 0.5rem;
+}
+.setting {
+    position: relative;
+}
+.task-img{
+    position: absolute;
+    width: 1rem;
+    right:2rem;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.setting .task-icons{
+    background-color: rgb(250, 250, 250);
+    box-shadow: rgba(48, 48, 48, 0.2) 0px 8px 24px;
+    position: absolute;
+    right:-3rem;
+    padding: 0.5rem;
+    z-index: 1;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: 0.2s ease
+}
+.setting:hover .task-icons{
+    transform: scale(1);
+}
+#edit{
+    width: 1rem;
+    margin: 0.4rem;
+}
+#delete{
+    width: 1rem;
+    margin: 0.4rem;
+}
+span{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.checked{
+    text-decoration: line-through;
+}
