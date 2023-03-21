@@ -128,3 +128,6 @@ span{
 .checked{
     text-decoration: line-through;
 }
+.filters span.active{
+    color:rgb(48, 107, 184);
+}
